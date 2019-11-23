@@ -1,4 +1,4 @@
-# Java Workshop
+# Java Workshop WORK IN PROGRESS :)
 
 ## Introduction
 
