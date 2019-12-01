@@ -2,22 +2,6 @@
 
 ## Introduction
 
-### Identifiers (names given to methods, variables, classes etc)
-
-Java identifiers can start with a letter (A to Z or a to z), dollar sign ($) or an underscore (_). No numbers or other characters!
-
-After the first character, identifiers can contain letters, digits, underscore, and dollar signs in any order.
-
-A keyword cannot be used as an identifier.
-
-Java identifiers are case sensitive.
-
-Which of these options do you think could be used as a name for a java identifier?
-
-_HelloWorld_
-123HelloWorld
-$helloworld
-class
 
 ### Section 2
 
