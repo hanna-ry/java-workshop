@@ -2,25 +2,38 @@
 
 ## Introduction
 
+TODO: add introduction text!"
 
-### Section 2
+TODO: Add instruction on how to download, install JDK!
 
-## Hello World!
+TODO: Add instruction on how to install IDE!
+
+## Lets do some christmas themed programming!
+
+### Hello World! Try this out if you've never done it before
 
 https://repl.it/@hannary/Hello-World
 
+
+### A Program for writing a christmas wish list
+TODO: add instructions!
 https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChristmasList)
 
-## lbs to kg converter
+## third program
 
-### Section 1
+TODO: Come up with a third program and add instructions. Plus points if christmas themed.
 
-### Section 2
+## fourth program
 
+TODO: Come up with a fourth program and add instructions. Plus points if christmas themed.
 
-You can use the [editor on GitHub](https://github.com/hanna-ry/java_workshop/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Harder project: Lets create some christmas memories
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![image]https://ibb.co/WHhG6w2
+
+Or in this case, Christmas Memory. Tha classic game we all love to play.
+
+TODO: Add instructions and code. And fix the terrible pictre
 
 ### Markdown
 
