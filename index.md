@@ -19,13 +19,13 @@ https://repl.it/@hannary/Hello-World
 TODO: add instructions!
 https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChristmasList)
 
-## Temperature converter and santa checker
+### Temperature converter and santa checker
 Santa clause has decided to take a stand against global warming by declaring that he will only show up if the winter is actually cold, and its below 0 degrees celcius. Lets write a program to help our friends who only know fahrenheit!
 https://repl.it/@hannary/Temperature-converter-and-Santa-checker
 
 TODO: Come up with a third program and add instructions. Plus points if christmas themed.
 
-## fourth program
+### fourth program
 
 TODO: Come up with a fourth program and add instructions. Plus points if christmas themed.
 
