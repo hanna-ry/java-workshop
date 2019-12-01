@@ -32,7 +32,6 @@ TODO: Come up with a fourth program and add instructions. Plus points if christm
 ![image](tempsnip.png)
 
 Or in this case, Christmas Memory. Tha classic game we all love to play.
-
 TODO: Add instructions and code. And fix the terrible pictre
 
 ### Markdown
