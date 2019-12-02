@@ -24,7 +24,8 @@ Right now, the program lets you add one item, prints it out, and qutis. It needs
 https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChristmasList)
 
 **Step one: Before the loop**
-Add the start of the main method, create a string to store a gift in, and a list to store the gift strings in:
+
+At the start of the main method, create a string to store a gift in, and a list to store the gift strings in:
 
 ``` List<String> gifts = new ArrayList<String>();
 String gift;
