@@ -27,8 +27,9 @@ https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChris
 
 At the start of the main method, create a string to store a gift in, and a list to store the gift strings in:
 
-``` List<String> gifts = new ArrayList<String>();
-String gift;
+``` 
+`List<String> gifts = new ArrayList<String>();
+String gift;`
  ```
 
 Next, add a boolean to control the flow of the program:
@@ -38,9 +39,11 @@ Next, add a boolean to control the flow of the program:
 After that, add a System.out.println statement that prints ""Print q to quit, s to see current list ".
 
 **Step two: in the loop**
+
 Now we add a while loop that runs while the boolean is true:
 
-``` while(isProgramRunning){
+``` 
+while(isProgramRunning){
 
 } 
 ```
