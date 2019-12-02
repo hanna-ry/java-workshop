@@ -25,11 +25,11 @@ https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChris
 
 **Step one: Before the loop**
 
-At the start of the main method(public static void main(String[] args)), create a string to store a gift in, and a list to store the gift strings in:
+At the start of the main method(public static void main(String[] args)), create a string to store the user input in, and a list to store the strings in:
 
 ``` 
-List<String> gifts = new ArrayList<String>();
-String gift;
+List<String> s = new ArrayList<String>();
+String userInput;
  ```
 
 Next, after those variables, add a boolean to control the flow of the program:
