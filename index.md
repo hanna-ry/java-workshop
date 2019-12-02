@@ -28,8 +28,8 @@ https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChris
 At the start of the main method(public static void main(String[] args)), create a string to store a gift in, and a list to store the gift strings in:
 
 ``` 
-`List<String> gifts = new ArrayList<String>();
-String gift;`
+List<String> gifts = new ArrayList<String>();
+String gift;
  ```
 
 Next, after those variables, add a boolean to control the flow of the program:
@@ -51,22 +51,22 @@ while(isProgramRunning){
 Inside the loop, add this line to read input from the user and store it in a list, and then print it ouy:
 
 ```
-gift = in.nextLine();
-gifts.add(gift)
+useInput = in.nextLine();
+gifts.add(useInput)
 System.out.println(gifts);
 ```
 
 Try it out! This program will run forever now, so you will have to kill it to end it.
 
-**Step three: Controlling the loop**
+**Step three:Controlling the loop**
 
-We have three cases: the input is 'l', and the gifts should be printed out.
-                     the input is 'q', and the program should end.
-                     the input is a string, and it should be added to the list.
+We have three cases: the useInput is 'l', and the gifts should be printed out.
+                     the useInput is 'q', and the program should end.
+                     the useInput is a string, and it should be added to the list.
                      
  Inside the loop, add an if else clause:
  ```
- if(gift.equals("q"){
+ if(useInput.equals("q"){
         isProgramRunning = false;
       }
  ```
@@ -76,7 +76,7 @@ We have three cases: the input is 'l', and the gifts should be printed out.
  next, add two more cases:
  
  ```
- else if (gift.equals("l"){
+ else if (useInput.equals("l"){
     //Move the System.out.println that prints the list of gifts here
  }
  else {
