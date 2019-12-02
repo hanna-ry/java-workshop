@@ -65,7 +65,8 @@ We have three cases: the input is 'l', and the gifts should be printed out.
                      the input is a string, and it should be added to the list.
                      
  Inside the loop, add an if else clause:
- ``` if(gift.equals("q"){
+ ```
+ if(gift.equals("q"){
         isProgramRunning = false;
       }
  ```
