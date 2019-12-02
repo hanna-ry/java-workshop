@@ -23,10 +23,10 @@ You should be able to add more items, print them out, and quit the program.
 Right now, the program lets you add one item, prints it out, and qutis. It needs a loop to run in and decide what to do based on user input!
 https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChristmasList)
 
-####Step one: Before the loop
+**Step one: Before the loop**
 Add the start of the main method, create a string to store a gift in, and a list to store the gift strings in:
 
-```List<String> gifts = new ArrayList<String>();
+``` List<String> gifts = new ArrayList<String>();
 String gift;
  ```
 
@@ -36,7 +36,7 @@ Next, add a boolean to control the flow of the program:
 
 After that, add a System.out.println statement that prints ""Print q to quit, s to see current list ".
 
-####Step two: in the loop
+**Step two: in the loop**
 Now we add a while loop that runs while the boolean is true:
 
 ``` while(isProgramRunning){
@@ -54,7 +54,7 @@ System.out.println(gifts);
 
 Try it out! This program will run forever now, so you will have to kill it to end it.
 
-####Step three: Controlling the loop
+**Step three: Controlling the loop**
 
 We have three cases: the input is 'l', and the gifts should be printed out.
                      the input is 'q', and the program should end.
