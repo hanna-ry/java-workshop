@@ -66,7 +66,7 @@ We have three cases: the useInput is 'l', and the gifts should be printed out.
                      
  Inside the loop, add an if else clause:
  ```
- if(useInput.equals("q"){
+ if(useInput.equals("q")){
         isProgramRunning = false;
       }
  ```
@@ -76,7 +76,7 @@ We have three cases: the useInput is 'l', and the gifts should be printed out.
  next, add two more cases:
  
  ```
- else if (useInput.equals("l"){
+ else if (useInput.equals("l")){
     //Move the System.out.println that prints the list of gifts here
  }
  else {
