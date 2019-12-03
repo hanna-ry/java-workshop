@@ -15,6 +15,7 @@ TODO: Add instruction on how to install IDE!
 Are you completly new to java, or programming in general? Or maybe you just want to warm up? Start here! 
 
 **Hello World**
+
 A hello world program is a time-honored tradition in programming as a beginners first challange. Enter the repl below in a new tab, or download the zip, and follow the instructions. 
 
 https://repl.it/@hannary/Hello-World
@@ -23,7 +24,7 @@ As you could see in the above example, There is a class called Main and a method
 
 **A christmas greeting**
 
-Lets try make another method, that is not the main method. In the HelloWorld program, after the main method, add a new method:
+Lets try make a new method after the main method. In the HelloWorld program, after the main method, add a new method:
 
 ``` 
 public static void christmasGreeting(String personToGreet) {
@@ -43,7 +44,52 @@ Inside the main method, add a call to our new ChristmasGreeting method:
 
 Name can be anything you want. Now run the program, the output should be "Merry Christmas, Name!"
 
+### Temperature converter and santa checker
+Santa clause has decided to make a stand against global warming by declaring that he will only show up if the winter is actually cold, meaning the temperature is below 0 degrees celcius. Lets write a program to help our friends who only know fahrenheit!
 
+Open the following repl in a new tab, or download the program and start it in your ide:
+
+https://repl.it/@hannary/Temperature-converter-and-Santa-checker
+
+As you can see, there is only one lonely print statement in there. Let's change that. 
+At the top of the file is an import statement, which let's us use the build in Java Scanner to read input. After the System.out.println statement, add this:
+
+```
+Scanner reader = new Scanner(System.in);
+int f = reader.nextInt();
+System.out.println(f);
+```
+
+The first statement creates a reader, that can be used to read user input. The next one saves the next number the user inputs. the third one prints that number. Try it out! (try printing something other than a number.. you will get an error as Java expects a number and don't know what to do with text, for example).
+
+Now let's do some math. The formula for converting Fahrenheit to celcius is: celsius = ((fahrenheit - 32) * 5) /9
+Since an int doesnt allow decimals, this is an approximation. But it will do for now.
+under the line reading in the value f, add:
+
+```int c = ((f - 32) * 5) /9;```
+
+Now instead of only printing f, print the new temperature:
+
+```System.out.println(c);```
+
+Change the above print statement to be a little more descreptive. instead of c, write: (c + "degrees in celsous is " + f + " degrees in 
+
+```System.out.println(f + "degrees in farenheit is " + c + "degrees in celsius");```
+
+Try it out! 
+
+Now let's add a santa check. We want to print out "Santa is coming!" if the value of c is zero or lower, and "Santa isn't coming" otherwise. Add the following under the other code:
+
+```
+if(c<=0){
+  //Add system.out.println here
+}
+else {
+  //Add system.out.println here
+} 
+```
+
+Try it out! You should now have a santa checker and temperature checker, for all your winter needs.
 
 
 ### A Program for writing a christmas wish list
@@ -116,22 +162,6 @@ We have three cases: the useInput is 'l', and the gifts should be printed out.
  }
  ```
  
-
-
-
-
- 
- 
- 
- 
-
-
-### Temperature converter and santa checker
-Santa clause has decided to make a stand against global warming by declaring that he will only show up if the winter is actually cold, meaning the temperature is below 0 degrees celcius. Lets write a program to help our friends who only know fahrenheit!
-
-https://repl.it/@hannary/Temperature-converter-and-Santa-checker
-
-TODO: Come up with a third program and add instructions. Plus points if christmas themed.
 
 ### Christmas Tree
 It's Christmas time, so today we are going to be drawing a Christmas tree of your chosen size in Java.
