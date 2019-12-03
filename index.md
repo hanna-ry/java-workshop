@@ -9,7 +9,13 @@ TODO: Add instruction on how to download, install JDK!
 TODO: Add instruction on how to install IDE!
 
 ## Lets do some christmas themed programming!
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
 
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
 ### Hello World! 
 
 Are you completly new to java, or programming in general? Or maybe you just want to warm up? Start here! 
