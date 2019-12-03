@@ -4,7 +4,9 @@
 
 ---
 ---
-
+.page-header {
+  color: #ccc;
+}
 @import "{{ site.theme }}";
 
 .page-header {
