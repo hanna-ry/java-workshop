@@ -103,8 +103,9 @@ https://repl.it/@hannary/Temperature-converter-and-Santa-checker
 TODO: Come up with a third program and add instructions. Plus points if christmas themed.
 
 ### fourth program
+It's Christmas time, so today we are going to be drawing a Christmas tree of your chosen size in Java.
 
-TODO: Come up with a fourth program and add instructions. Plus points if christmas themed.
+https://repl.it/@Saeideh/ChristmasTree
 
 ## Harder project: Lets create some christmas memories
 
