@@ -1,16 +1,12 @@
-.page-header {
-  color: #ccc;
-}
+
 
 ---
 ---
-.page-header {
-  color: #ccc;
-}
+
 @import "{{ site.theme }}";
 
 .page-header {
-  background-color: #ccc;
+  background-color: #ccc !important;
 }
 
 div {
