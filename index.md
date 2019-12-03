@@ -9,13 +9,7 @@ TODO: Add instruction on how to download, install JDK!
 TODO: Add instruction on how to install IDE!
 
 ## Lets do some christmas themed programming!
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+<div style="background-color:lightblue">
 ### Hello World! 
 
 Are you completly new to java, or programming in general? Or maybe you just want to warm up? Start here! 
@@ -49,7 +43,7 @@ Inside the main method, add a call to our new ChristmasGreeting method:
 ``` christmasGreeting("Name"); ```
 
 Name can be anything you want. Now run the program, the output should be "Merry Christmas, Name!"
-
+</div>
 ### Temperature converter and santa checker
 Santa clause has decided to make a stand against global warming by declaring that he will only show up if the winter is actually cold, meaning the temperature is below 0 degrees celcius. Lets write a program to help our friends who only know fahrenheit!
 
