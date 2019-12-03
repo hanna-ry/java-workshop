@@ -102,12 +102,13 @@ https://repl.it/@hannary/Temperature-converter-and-Santa-checker
 
 TODO: Come up with a third program and add instructions. Plus points if christmas themed.
 
-### fourth program
+### Christmas Tree
 It's Christmas time, so today we are going to be drawing a Christmas tree of your chosen size in Java.
 
 https://repl.it/@Saeideh/ChristmasTree
 
 All is about three loops:
+
 **Step one: Loop for number of rows**
  ```
  for (int i = 0; i < x; i++) {
