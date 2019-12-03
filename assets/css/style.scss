@@ -1,6 +1,10 @@
 ---
 ---
 
+.page-header {
+  background-color: #ccc;
+}
+
 @import "{{ site.theme }}";
 
 .page-header {
