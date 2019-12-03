@@ -10,9 +10,40 @@ TODO: Add instruction on how to install IDE!
 
 ## Lets do some christmas themed programming!
 
-### Hello World! Try this out if you've never done it before
+### Hello World! 
+
+Are you completly new to java, or programming in general? Or maybe you just want to warm up? Start here! 
+
+**Hello World**
+A hello world program is a time-honored tradition in programming as a beginners first challange. Enter the repl below in a new tab, or download the zip, and follow the instructions. 
 
 https://repl.it/@hannary/Hello-World
+
+As you could see in the above example, There is a class called Main and a method called main. All java code has to be inside a class (but it doesn't have to be called Main, that is just the standard name used in repl). The entry point of a program is the "public static void main(String args[])" method. Java will look for this method to know where to start executing code. Try removing it and see what the compiler says!
+
+**A christmas greeting**
+
+Lets try make another method, that is not the main method. In the HelloWorld program, after the main method, add a new method:
+
+``` 
+public static void christmasGreeting(String personToGreet) {
+
+}
+``` 
+
+remove the System.out.println("Hello World!") from the main method and run the program. You should not get any errors or any other output.
+
+Now add a new System.out.println inside the christmasGreeting method:
+
+``` System.out.println("Merry Christmas ", + personToGreet);``` 
+
+Inside the main method, add a call to our new ChristmasGreeting method:
+
+``` christmasGreeting("Name"); ```
+
+Name can be anything you want. Now run the program, the output should be "Merry Christmas, Name!"
+
+
 
 
 ### A Program for writing a christmas wish list
