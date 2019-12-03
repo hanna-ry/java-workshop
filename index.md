@@ -107,6 +107,24 @@ It's Christmas time, so today we are going to be drawing a Christmas tree of you
 
 https://repl.it/@Saeideh/ChristmasTree
 
+All is about three loops:
+**Step one: Loop for number of rows**
+ ```
+ for (int i = 0; i < x; i++) {
+ ```
+ 
+ **Step two: Loop for printing the Space**
+ ```
+ for (int j = 0; j < i; j++)
+    System.out.print(" ");
+ ```
+ 
+ **Step three: Loop for printing the asterisks**
+ ```
+ for (int k = 0; k < (2 * i + 1) ; j++)
+    System.out.print("*");
+ ```
+There we go :)
 ## Harder project: Lets create some christmas memories
 
 ![image](tempsnip.png)
