@@ -1,13 +1,13 @@
 # Java Workshop WORK IN PROGRESS :)
 
 ## Introduction
-
+<div>
 TODO: add introduction text!"
 
 TODO: Add instruction on how to download, install JDK!
 
 TODO: Add instruction on how to install IDE!
-
+</div>
 ## Lets do some christmas themed programming!
 ### Hello World! 
 
