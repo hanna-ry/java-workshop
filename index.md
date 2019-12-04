@@ -73,11 +73,15 @@ under the line reading in the value f, add:
 
 Now instead of only printing f, print the new temperature:
 
-```System.out.println(c);```
+```
+System.out.println(c);
+```
 
 Change the above print statement to be a little more descreptive. instead of c, write: (c + "degrees in celsous is " + f + " degrees in 
 
-```System.out.println(f + "degrees in farenheit is " + c + "degrees in celsius");```
+```
+System.out.println(f + "degrees in farenheit is " + c + "degrees in celsius");
+```
 
 Try it out! 
 
