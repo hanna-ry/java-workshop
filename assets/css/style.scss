@@ -4,8 +4,16 @@
 @import "{{ site.theme }}";
 
 .page-header {
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-image: url("https://media.giphy.com/media/Q9AqhK2GgnIf1zh3yF/giphy.gif"), linear-gradient(0deg, rgba(198,42,18,0.9864320728291317) 0%, rgba(98,0,0,1) 100%);
+  background-image: url(https://i.giphy.com/media/AgOiF7Uu3IvXP5l35m/giphy.webp),
+  linear-gradient(0deg, #aa0000 0%, #993333 100%);
+  background-repeat: no-repeat, repeat; /* Do not repeat the image */
+  
+}
+
+h1 {
+  
+    font-weight: 700;
+
 }
 
 div {
