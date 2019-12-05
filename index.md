@@ -4,14 +4,13 @@
 
 <div class="image-div">
 </div>
+
+## Introduction
 TODO: add introduction text!"
 
 TODO: Add instruction on how to download, install JDK!
 
 TODO: Add instruction on how to install IDE!
-
-## Introduction
-
 ## Lets do some christmas themed programming!
 ### Hello World! 
 
