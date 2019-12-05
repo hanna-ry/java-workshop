@@ -200,6 +200,99 @@ There we go :)
 Or in this case, Christmas Memory. Tha classic game we all love to play.
 TODO: Add instructions and code. And fix the terrible pictre
 
+Run the program. You should see an empty frame. 
+
+We already created the class Card for you. Take a look: It contains an Image, an ID for comparing and two booleans to keep track of if the images are showing, and if they've been found.
+
+In the folder, there are 12 images we will use for the cards.
+
+We'll add the cards in the board. In the setUpBoard() method in Board.java, we start by initiating two values: openCards where we will store open cards, and frame, where we store the game "frame".
+
+Under those to values, we'll add the cards. Each card needs to be added twice, and have an ID and an image:
+
+ ```
+Card card1 = new Card("wreath", "wreath.png");
+Card card2 = new Card("wreath", "wreath.png");
+Card card3 = new Card("gift", "gift.png");
+Card card4 = new Card("gift", "gift.png");
+Card card5 = new Card("hat", "santa-hat.png");
+Card card6 = new Card("hat", "santa-hat.png");
+Card card7 = new Card("sweet", "sweet.png");
+Card card8 = new Card("sweet", "sweet.png");
+Card card9 = new Card("mistletoe", "mistletoe.png");
+Card card10 = new Card("mistletoe", "mistletoe.png");
+Card card11 = new Card("tree", "christmas-tree.png");
+Card card12 = new Card("tree", "christmas-tree.png");
+ ```  
+
+After creating the cards, We'll add them all to an array to make handeling them a little bit easier:
+
+ ```
+ cards.add(card1);  cards.add(card2);  cards.add(card3);  cards.add(card4);  cards.add(card5); 
+ cards.add(card6);  cards.add(card7);  cards.add(card8);  cards.add(card9);  cards.add(card10);
+ cards.add(card11); cards.add(card12);
+ ```
+
+Phew! Next, lets shuffle the cards so they'll show up at different places of the board:
+
+```
+Collections.shuffle(cards);
+```
+
+Next, we'll go through the array and add every card to the game frame, set the icon to null (so that the cards will be empty at the start of the game), and then we'll add a *listener* to each card. Since we are using swing components, the listener method is 
+built in. It allows us to tell java that we want the computer to listen for a click of the button. When the button is clicked, the listener method will be called:
+
+```
+for(Card card : cards) {
+     frame.add(card);
+     card.setIcon(null);
+     card.addActionListener(this);
+  }
+```
+
+Try running the program. You should see a matrix of blank cards. If you try clicking one, nothing will happen. Time to change that.
+The listener method inherented from swing is called " actionPerformed(ActionEvent e)". Locate it under the setUpBoard() method.
+
+Add this to the top of the method: 
+
+```
+Card justOpened = ((Card)e.getSource());
+justOpened.togglePictureShowing(true);
+```
+
+We just got the card from the event, and set it as showing. Try running the program. You should be able to open the cards now.
+
+We need a way to keep track of how many, and which cards are currently open. Ad this after the two other lines:
+
+```
+openCards.add(justOpened);
+```
+
+## Adding logic
+
+Go back to the very top of the actionPerformed method. As soon as the user clicks a card, we want to check iif two cards are currently showing:
+
+```
+if(openCards.size()==2){
+
+
+}
+```
+If two cards are open, we can retrive them from the openCards array. Add the following **inside** the if clause:
+
+```
+Card firstOpen = openCards.get(0);
+Card secondOpen = openCards.get(1);
+ ```
+
+After this, we check if there's a match and close the cards. After that, we call the method that closes cards.
+```
+ checkIfMatch(firstOpen, secondOpen);
+ closeCards(firstOpen, secondOpen);
+ ```
+
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
