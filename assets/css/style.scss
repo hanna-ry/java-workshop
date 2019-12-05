@@ -4,25 +4,27 @@
 @import "{{ site.theme }}";
 
 .page-header {
-  background-image: url(https://i.giphy.com/media/AgOiF7Uu3IvXP5l35m/giphy.webp),
-  linear-gradient(0deg, #aa0000 0%, #993333 100%);
+  background-image:  url(https://www.appmachine.com/wp-content/uploads/2015/12/christmas-header-bg-1.gif);
   background-repeat: no-repeat, repeat; /* Do not repeat the image */
   
 }
 
 .main-content{
-  color: 9b2e2e;
+  color: #991515;
   h1 {
     font-weight: 700;
   color: #9b2e2e;
+        text-align: center;
   }
 }
 
-
-h1 {
-    font-weight: 700;
-
+.img-div {
+    background-image: url(https://i.giphy.com/media/AgOiF7Uu3IvXP5l35m/giphy.webp);
+    padding: 15rem;
+    background-repeat: no-repeat; 
+    background-position:center;
 }
+
 
 div {
      color: #fff; 
