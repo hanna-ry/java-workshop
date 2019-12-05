@@ -5,7 +5,7 @@
 
 .page-header {
   background-image:  url(https://www.appmachine.com/wp-content/uploads/2015/12/christmas-header-bg-1.gif);
-  background-repeat: no-repeat, repeat; /* Do not repeat the image */
+  background-repeat: repeat; /* Do not repeat the image */
   
 }
 
@@ -18,11 +18,13 @@
   }
 }
 
-.img-div {
+.main-content {
+  div {
     background-image: url(https://i.giphy.com/media/AgOiF7Uu3IvXP5l35m/giphy.webp);
     padding: 15rem;
     background-repeat: no-repeat; 
     background-position:center;
+  }
 }
 
 
