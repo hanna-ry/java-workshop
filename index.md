@@ -38,7 +38,7 @@ remove the System.out.println("Hello World!") from the main method and run the p
 
 Now add a new System.out.println inside the christmasGreeting method:
 
-``` System.out.println("Merry Christmas ", + personToGreet);``` 
+``` System.out.println("Merry Christmas " + personToGreet);``` 
 
 Inside the main method, add a call to our new ChristmasGreeting method:
 
@@ -70,7 +70,7 @@ under the line reading in the value f, add:
 
 ```int c = ((f - 32) * 5) /9;```
 
-Now instead of only printing f, print the new temperature:
+Now instead of only printing f, change the System.out.print to print the new temperature:
 
 ```
 System.out.println(c);
@@ -84,16 +84,18 @@ System.out.println(f + "degrees in farenheit is " + c + "degrees in celsius");
 
 Try it out! 
 
-Now let's add a santa check. We want to print out "Santa is coming!" if the value of c is zero or lower, and "Santa isn't coming" otherwise. Add the following under the other code:
+Now let's add a santa check. We want to print out "Santa is coming!" if the value of c is zero or lower, and "Santa isn't coming" otherwise. Add the following under the lines of code you just added:
 
 ```
-if(c<=0){
+if(c <= 0){
   //Add system.out.println here
 }
 else {
   //Add system.out.println here
 } 
 ```
+
+Add the System.out.println() statements with your output inside the if and else clauses.
 
 Try it out! You should now have a santa checker and temperature checker, for all your winter needs.
 
@@ -108,10 +110,10 @@ https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChris
 
 **Step one: Before the loop**
 
-At the start of the main method(public static void main(String[] args)), create a string to store the user input in, and a list to store the strings in:
+At the start of the main method(public static void main(String[] args)), create a string to store the current user input in, and a list to store all of the input in:
 
 ``` 
-List<String> s = new ArrayList<String>();
+List<String> s = new ArrayList<>();
 String userInput;
  ```
 
@@ -123,7 +125,7 @@ After that, add a System.out.println statement that prints ""Print q to quit, s 
 
 **Step two: in the loop**
 
-Now we add a while loop that runs while the boolean is true:
+Now we add a while loop that runs while the boolean *isProgramRunning* is true:
 
 ``` 
 while(isProgramRunning){
@@ -131,25 +133,26 @@ while(isProgramRunning){
 } 
 ```
 
-Inside the loop, add this line to read input from the user and store it in a list, and then print it ouy:
+Inside the loop: add these lines to read input from the user and store it in a list and then print it out:
 
 ```
-useInput = in.nextLine();
-gifts.add(useInput)
+userInput = in.nextLine();
+gifts.add(userInput)
 System.out.println(gifts);
 ```
 
 Try it out! This program will run forever now, so you will have to kill it to end it.
 
-**Step three:Controlling the loop**
+**Step three: Controlling the loop**
 
-We have three cases: the useInput is 'l', and the gifts should be printed out.
-                     the useInput is 'q', and the program should end.
-                     the useInput is a string, and it should be added to the list.
+We have three cases: the userInput is 'l', and the gifts should be printed out.
+                     the userInput is 'q', and the program should end.
+                     the userInput is a new item for the wishlist (a string(, and it should be added to the list.
                      
- Inside the loop, add an if else clause:
+ Inside the while loop, add an *if else* clause:
+ 
  ```
- if(useInput.equals("q")){
+ if(userInput.equals("q")){
         isProgramRunning = false;
       }
  ```
@@ -159,7 +162,7 @@ We have three cases: the useInput is 'l', and the gifts should be printed out.
  next, add two more cases:
  
  ```
- else if (useInput.equals("l")){
+ else if (userInput.equals("l")){
     //Move the System.out.println that prints the list of gifts here
  }
  else {
@@ -168,6 +171,11 @@ We have three cases: the useInput is 'l', and the gifts should be printed out.
  }
  ```
  
+
+Move the System.out.printlns into the *else* clauses as specified in the comments above.
+
+There! You have a program to store gifts. Nifty.
+
 
 ### Christmas Tree
 It's Christmas time, so today we are going to be drawing a Christmas tree of your chosen size in Java.
@@ -200,15 +208,17 @@ There we go :)
 Or in this case, Christmas Memory. Tha classic game we all love to play.
 TODO: Add instructions and code. And fix the terrible pictre
 
-Run the program. You should see an empty frame. 
+In this application we are using an old java toolkit called *swing*. It's rarely used for new projects today, but it's useful for making small, lightweight applications to learn java. 
 
-We already created the class Card for you. Take a look: It contains an Image, an ID for comparing and two booleans to keep track of if the images are showing, and if they've been found.
+If you run the program, you should see an empty frame.  
+
+We already created the class Card for you. Take a look: It contains an Image, an ID for comparing cards, and two booleans to keep track of if the images/have been found.
 
 In the folder, there are 12 images we will use for the cards.
 
-We'll add the cards in the board. In the setUpBoard() method in Board.java, we start by initiating two values: openCards where we will store open cards, and frame, where we store the game "frame".
+ In the setUpBoard() method in Board.java, we have already initiated two values: openCards where we will store open cards, and frame, where we store the game "frame". We'll now add some the cards to the board.
 
-Under those to values, we'll add the cards. Each card needs to be added twice, and have an ID and an image:
+Under the two already initiated values mentioned above, we'll add the cards. Each card needs to be added twice, and have an ID and an image:
 
  ```
 Card card1 = new Card("wreath", "wreath.png");
@@ -225,7 +235,7 @@ Card card11 = new Card("tree", "christmas-tree.png");
 Card card12 = new Card("tree", "christmas-tree.png");
  ```  
 
-After creating the cards, We'll add them all to an array to make handeling them a little bit easier:
+After creating the cards, We'll add them all to an the array "cards" to make handeling them a little bit easier:
 
  ```
  cards.add(card1);  cards.add(card2);  cards.add(card3);  cards.add(card4);  cards.add(card5); 
@@ -239,8 +249,9 @@ Phew! Next, lets shuffle the cards so they'll show up at different places of the
 Collections.shuffle(cards);
 ```
 
+
 Next, we'll go through the array and add every card to the game frame, set the icon to null (so that the cards will be empty at the start of the game), and then we'll add a *listener* to each card. Since we are using swing components, the listener method is 
-built in. It allows us to tell java that we want the computer to listen for a click of the button. When the button is clicked, the listener method will be called:
+built in. It allows us to tell java that we want the application to listen for a click of the button. When the button is clicked, the listener method will be called:
 
 ```
 for(Card card : cards) {
@@ -250,7 +261,7 @@ for(Card card : cards) {
   }
 ```
 
-Try running the program. You should see a matrix of blank cards. If you try clicking one, nothing will happen. Time to change that.
+Try running the program. You should see a matrix of blank cards. If you try clicking one, nothing will happen. We are not doing anything in the listener, so the application isn't doing anything when we click.
 The listener method inherented from swing is called " actionPerformed(ActionEvent e)". Locate it under the setUpBoard() method.
 
 Add this to the top of the method: 
@@ -268,9 +279,11 @@ We need a way to keep track of how many, and which cards are currently open. Ad 
 openCards.add(justOpened);
 ```
 
+We now have a program that shows empty cards. When a cards is clicked, a listener is called and in the listener we tell the program to show the image of the clicked card and store all open cards in an array. Nice.
+
 ## Adding logic
 
-Go back to the very top of the actionPerformed method. As soon as the user clicks a card, we want to check iif two cards are currently showing:
+Go back to the very top of the actionPerformed method. As soon as the user clicks a card, we want to check if two cards are currently showing:
 
 ```
 if(openCards.size()==2){
@@ -285,12 +298,46 @@ Card firstOpen = openCards.get(0);
 Card secondOpen = openCards.get(1);
  ```
 
-After this, we check if there's a match and close the cards. After that, we call the method that closes cards.
+Now lets see what we want to do with these two open cards. First, we want to check if they match. Then, we want to close them if they don't match. There are two prepared methods that matches these cases. Lets call them with our two cards:
+
 ```
  checkIfMatch(firstOpen, secondOpen);
  closeCards(firstOpen, secondOpen);
  ```
+ 
+We need to implement the checkIfMatch() and closeCards() methods. They exist, but have no bodey. We'll start with checkIfMatch, located under the actionPerformed method. Inside it, we'll check if the cards match by comparing the id's of the cards:
 
+```
+ if(firstOpen.getId().equals(secondOpen.getId())){
+           
+    }
+```
+
+What we do here is asking "get the it of the first open card. Is it equal to the id of the second open card?"
+
+If the answer is yes, we need to set the card to "found" so that they can't be closed again. Add this *inside* the if:
+
+```
+firstOpen.setAsFound();
+secondOpen.setAsFound();
+
+```
+
+There! Let's move on to the closeCards method, under the checkIfMatch method. In the Cards class, you can look at the toggleImageShowing method. It only toggles the image of cards that aren't set to found. Add this at the top of toggleImageShowing:
+
+```
+firstOpen.togglePictureShowing(false);
+secondOpen.togglePictureShowing(false);
+```
+
+The last thing we'll do inside the closeCards method is clear the array of open cards, since no cards are open anymore (except for the "found" cards, that we consider "out of the game"):
+
+```
+openCards.clear();
+```
+
+
+Try it out!
 
 
 ### Markdown
