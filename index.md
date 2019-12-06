@@ -5,12 +5,10 @@
 <div class="image-div">
 </div>
 
-## Introduction
-TODO: add introduction text!"
+## Introduction 
 
-TODO: Add instruction on how to download, install JDK!
+https://docs.google.com/presentation/d/1ccMVm5nXKfPi9ciCNXAgnpB0VLV0Cb7gEislbcAJJYo/edit?usp=sharing
 
-TODO: Add instruction on how to install IDE!
 ## Lets do some christmas themed programming!
 ### Hello World! 
 
