@@ -202,6 +202,8 @@ Each line consist of spaces for indentation, and stars for the tree. We need to 
  *****************    1 spaces, 17 stars, i = 8
 *******************   0 spaces, 19 stars, i = 9
 ```
+Now we need to found pattern. See for 1st row there is 1 star.For 2nd there are 3 , for 3rd there are 5 and so on.So it follows the general rule of 2*(n-1)+1. As our i starts form 0 so (n-1)=i. Thus number of stars in (i+1)th row = 2*i+1.
+
 All is about three loops:
 
 **Step one: Loop for number of rows**
@@ -221,8 +223,6 @@ All is about three loops:
  for (int k = 0; k < (2 * i + 1) ; j++)
     System.out.print("*");
  ```
-See for 1st row there is 1 star.For 2nd there are 3 , for 3rd there are 5 and so on.So it follows the general rule of 2*(n-1)+1. 
-As our i starts form 0 so (n-1)=i. Thus number of stars in (i+1)th row = 2*i+1.
 
 There we go :)
 ## Harder project: Lets create some christmas memories
