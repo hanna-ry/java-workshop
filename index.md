@@ -26,7 +26,7 @@ Are you completly new to java, or programming in general? Or maybe you just want
 
 A hello world program is a time-honored tradition in programming as a beginners first challange. Enter the repl below in a new tab, or download the zip, and follow the instructions. 
 
-https://repl.it/@hannary/Hello-World
+https://repl.it/@hannary/Hello-World-1
 
 As you could see in the above example, There is a class called Main and a method called main. All java code has to be inside a class (but it doesn't have to be called Main, that is just the standard name used in repl). The entry point of a program is the "public static void main(String args[])" method. Java will look for this method to know where to start executing code. Try removing it and see what the compiler says!
 
@@ -112,7 +112,7 @@ Goal: a program that lets you make a christmas wish list.
 You should be able to add more items, print them out, and quit the program.
 
 Right now, the program lets you add one item, prints it out, and qutis. It needs a loop to run in and decide what to do based on user input!
-https://repl.it/@hannary/ChristmasList (DONE: https://repl.it/@hannary/DoneChristmasList)
+https://repl.it/@hannary/ChristmasList
 
 **Step one: Before the loop**
 
