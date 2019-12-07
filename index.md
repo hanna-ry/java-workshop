@@ -227,26 +227,31 @@ In the folder, there are 12 images we will use for the cards.
 Under the two already initiated values mentioned above, we'll add the cards. Each card needs to be added twice, and have an ID and an image:
 
  ```
+//Icons made by https://www.flaticon.com/authors/freepik Freepik from www.flaticon.com
 Card card1 = new Card("wreath", "wreath.png");
 Card card2 = new Card("wreath", "wreath.png");
-Card card3 = new Card("gift", "gift.png");
-Card card4 = new Card("gift", "gift.png");
-Card card5 = new Card("hat", "santa-hat.png");
-Card card6 = new Card("hat", "santa-hat.png");
-Card card7 = new Card("sweet", "sweet.png");
-Card card8 = new Card("sweet", "sweet.png");
-Card card9 = new Card("mistletoe", "mistletoe.png");
-Card card10 = new Card("mistletoe", "mistletoe.png");
+Card card3 = new Card("santa-claus", "santa-claus.png");
+Card card4 = new Card("santa-claus", "santa-claus.png");
+Card card5 = new Card("gingerbread-man", "gingerbread-man.png");
+Card card6 = new Card("gingerbread-man", "gingerbread-man.png");
+Card card7 = new Card("candy-cane", "candy-cane.png");
+Card card8 = new Card("candy-cane", "candy-cane.png");
+Card card9 = new Card("deer", "deer.png");
+Card card10 = new Card("deer", "deer.png");
 Card card11 = new Card("tree", "christmas-tree.png");
 Card card12 = new Card("tree", "christmas-tree.png");
+Card card13 = new Card("snowman", "snowman.png");
+Card card14 = new Card("snowman", "snowman.png");
+Card card15 = new Card("bauble", "bauble.png");
+Card card16 = new Card("bauble", "bauble.png");
  ```  
 
 After creating the cards, We'll add them all to an the array "cards" to make handeling them a little bit easier:
 
  ```
- cards.add(card1);  cards.add(card2);  cards.add(card3);  cards.add(card4);  cards.add(card5); 
- cards.add(card6);  cards.add(card7);  cards.add(card8);  cards.add(card9);  cards.add(card10);
- cards.add(card11); cards.add(card12);
+cards.add(card1);  cards.add(card2);  cards.add(card3);  cards.add(card4);  cards.add(card5);
+cards.add(card6);  cards.add(card7);  cards.add(card8);  cards.add(card9);  cards.add(card10);cards.add(card11); cards.add(card12); cards.add(card13); cards.add(card14); cards.add(card15);
+cards.add(card16);
  ```
 
 Phew! Next, lets shuffle the cards so they'll show up at different places of the board:
