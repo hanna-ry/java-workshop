@@ -13,7 +13,21 @@ The introduction slides, with instructions on how to install the java developmen
 
 [Download slides](https://docs.google.com/presentation/d/1ccMVm5nXKfPi9ciCNXAgnpB0VLV0Cb7gEislbcAJJYo/edit?usp=sharing)
 
-[Download workshop files (zip)] (https://drive.google.com/file/d/1Ho6_IVvl6XwDqQriUP8s7gg44EW3SzPW/view?usp=sharing)
+[Download workshop files (zip)](https://drive.google.com/file/d/1Ho6_IVvl6XwDqQriUP8s7gg44EW3SzPW/view?usp=sharing)
+
+There are two ways to follow this workshop. One is to download the zipe files linked above to your computer and do the tasks on your computer. You will then need to download JDK (java development kit) and and IDE (editor to develop in, we recommend Intellij). Details on this can be found in the slides above.
+
+You then need to unzip the files, and open them in your IDE by selecting the *Open... >project root* (In Intelliji below):
+
+![image](open_project.png)
+
+The other way is to just do the tasks directly in your browser using the links that you can find in every task except the last one (which requires an IDE). This does not require you to download anything.
+
+Don't hesitate to ask questions; for example, downloading the JDK and setting the enviorment variable can be tricky, but we're here to help!
+
+Start with any task you want. And have fun!
+
+- Hanna and Saeideh
 
 
 
