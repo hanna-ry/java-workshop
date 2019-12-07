@@ -9,7 +9,7 @@
 
 https://docs.google.com/presentation/d/1ccMVm5nXKfPi9ciCNXAgnpB0VLV0Cb7gEislbcAJJYo/edit?usp=sharing
 
-TODO: Find better pictures for memory game (hanna)
+TODO: Find better pictures for memory game (hanna) done
 
 TODO: Add the zipfile here so participants can download (hanna)
 
@@ -212,7 +212,6 @@ There we go :)
 ![image](game.png)
 
 Or in this case, Christmas Memory. Tha classic game we all love to play.
-TODO: Add instructions and code. And fix the terrible pictre
 
 In this application we are using an old java toolkit called *swing*. It's rarely used for new projects today, but it's useful for making small, lightweight applications to learn java. 
 
@@ -273,7 +272,7 @@ for(Card card : cards) {
 ```
 
 Try running the program. You should see a matrix of blank cards. If you try clicking one, nothing will happen. We are not doing anything in the listener, so the application isn't doing anything when we click.
-The listener method inherented from swing is called " actionPerformed(ActionEvent e)". Locate it under the setUpBoard() method.
+The listener method inherited from swing is called " actionPerformed(ActionEvent e)". *Locate it under the setUpBoard() method.*
 
 Add this to the top of the method: 
 
@@ -316,10 +315,10 @@ Now lets see what we want to do with these two open cards. First, we want to che
  closeCards(firstOpen, secondOpen);
  ```
  
-We need to implement the checkIfMatch() and closeCards() methods. They exist, but have no bodey. We'll start with checkIfMatch, located under the actionPerformed method. Inside it, we'll check if the cards match by comparing the id's of the cards:
+We need to implement the checkIfMatch() and closeCards() methods. They exist, but have no code. We'll start with checkIfMatch, located under the actionPerformed method. Inside it, we'll check if the cards match by comparing the id's of the cards:
 
 ```
- if(firstOpen.getId().equals(secondOpen.getId())){
+ if(firstOpen!=secondOpen &&  firstOpen.getId().equals(secondOpen.getId())){
            
     }
 ```
@@ -334,7 +333,7 @@ secondOpen.setAsFound();
 
 ```
 
-There! Let's move on to the closeCards method, under the checkIfMatch method. In the Cards class, you can look at the toggleImageShowing method. It only toggles the image of cards that aren't set to found. Add this at the top of toggleImageShowing:
+There! Let's move on to the closeCards method, under the checkIfMatch method. In the Cards class, you can look at the toggleImageShowing method. It only toggles the image of cards that aren't set to found. Add this at the top of closeCards:
 
 ```
 firstOpen.togglePictureShowing(false);
