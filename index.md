@@ -219,11 +219,11 @@ If you run the program, you should see an empty frame.
 
 We already created the class Card for you. Take a look: It contains an Image, an ID for comparing cards, and two booleans to keep track of if the images/have been found.
 
-In the folder, there are 12 images we will use for the cards.
+In the resources folder, there are 8 images we will use for the cards.
 
- In the setUpBoard() method in Board.java, we have already initiated two values: openCards where we will store open cards, and frame, where we store the game "frame". We'll now add some the cards to the board.
+In the beginning of the class, we've already created some variables: openCards where we will store open cards, frame where we store the game "frame", and "cards" which stores all cards. We'll now create the cards!
 
-Under the two already initiated values mentioned above, we'll add the cards. Each card needs to be added twice, and have an ID and an image:
+Under the already initiated values mentioned above, we'll add the cards. Each card needs to be added twice, and have an ID and an image:
 
  ```
 //Icons made by https://www.flaticon.com/authors/freepik Freepik from www.flaticon.com
@@ -245,7 +245,7 @@ Card card15 = new Card("bauble", "bauble.png");
 Card card16 = new Card("bauble", "bauble.png");
  ```  
 
-After creating the cards, We'll add them all to an the array "cards" to make handeling them a little bit easier:
+After creating the cards, we'll go into the *setUpBoard()* method. We'll add all the cards to the array "cards" to make handeling them a little bit easier:
 
  ```
 cards.add(card1);  cards.add(card2);  cards.add(card3);  cards.add(card4);  cards.add(card5);
@@ -348,6 +348,24 @@ openCards.clear();
 
 
 Try it out!
+
+## Playing again
+
+To add a play again button, go into the "Main" class. In the constructor, create a new "try again button", and add it to the main frame:
+
+```
+JButton tryAgain = new JButton(("Try again!"));
+tryAgain.addActionListener(this);
+mainFrame.add(tryAgain, BorderLayout.SOUTH);
+```
+
+Notice the value "BorderLayout.SOUTH". This decides where the button is located on the board. You can try other values, such as "BorderLayout.NORTH" or "BorderLayout.EAST" to see where you want the button.
+
+Now we want to add what should happen when we click the "try again" button. In the Main class, look for the *actionPerformed(e)* method. So what do we want to do when the button is clicked? If the player wants to play again, the board needs to be set upp again. Inside actionPerformed(e), add the line:
+
+```
+ board.setUpBoard();
+```
 
 
 ### Markdown
