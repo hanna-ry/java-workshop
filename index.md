@@ -13,7 +13,7 @@ TODO: Find better pictures for memory game (hanna) done
 
 TODO: Add the zipfile here so participants can download (hanna)
 
-TODO: Add some more details to the christmas tree program (saeideh?)
+TODO: Add some more details to the christmas tree program (saeideh?) done
 
 TODO: Proof read this page for spelling mistakes (both)
 
@@ -188,12 +188,27 @@ It's Christmas time, so today we are going to be drawing a Christmas tree of you
 
 https://repl.it/@Saeideh/ChristmasTree
 
+Each line consist of spaces for indentation, and stars for the tree. We need to be able to make a pyramids with *.
+```
+                      height = 10
+         *            9 spaces,  1 stars, i = 0
+        ***           8 spaces,  3 stars, i = 1
+       *****          7 spaces,  5 stars, i = 2
+      *******         6 spaces,  7 stars, i = 3
+     *********        5 spaces,  9 stars, i = 4
+    ***********       4 spaces, 11 stars, i = 5
+   *************      3 spaces, 13 stars, i = 6
+  ***************     2 spaces, 15 stars, i = 7
+ *****************    1 spaces, 17 stars, i = 8
+*******************   0 spaces, 19 stars, i = 9
+```
 All is about three loops:
 
 **Step one: Loop for number of rows**
  ```
  for (int i = 0; i < x; i++) {
  ```
+ Based on number that user inter, we will have rows. so this loop iterate x times.
  
  **Step two: Loop for printing the Space**
  ```
@@ -206,6 +221,9 @@ All is about three loops:
  for (int k = 0; k < (2 * i + 1) ; j++)
     System.out.print("*");
  ```
+See for 1st row there is 1 star.For 2nd there are 3 , for 3rd there are 5 and so on.So it follows the general rule of 2*(n-1)+1. 
+As our i starts form 0 so (n-1)=i. Thus number of stars in (i+1)th row = 2*i+1.
+
 There we go :)
 ## Harder project: Lets create some christmas memories
 
