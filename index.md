@@ -188,9 +188,8 @@ It's Christmas time, so today we are going to be drawing a Christmas tree of you
 
 https://repl.it/@Saeideh/ChristmasTree
 
-Each line consist of spaces for indentation, and stars for the tree. We need to be able to make a pyramids with *.
+Let's write down what we need to do. Each line consist of spaces for indentation, and stars for the tree. We need to be able to make a pyramids with *.
 ```
-                      height = 10
          *            9 spaces,  1 stars, i = 0
         ***           8 spaces,  3 stars, i = 1
        *****          7 spaces,  5 stars, i = 2
@@ -202,7 +201,7 @@ Each line consist of spaces for indentation, and stars for the tree. We need to 
  *****************    1 spaces, 17 stars, i = 8
 *******************   0 spaces, 19 stars, i = 9
 ```
-Now we need to found pattern. See for 1st row there is 1 star.For 2nd there are 3 , for 3rd there are 5 and so on.So it follows the general rule of 2*(n-1)+1. As our i starts form 0 so (n-1)=i. Thus number of stars in (i+1)th row = 2*i+1.
+Now see if we can discern the pattern. See for 1st row there is 1 star. For 2nd there are 3 ,for 3rd there are 5 and so on. So it follows the general rule of 2*(n-1)+1. As our i starts form 0 so (n-1)=i. Thus number of stars in (i+1)th row = 2*i+1.
 
 All is about three loops:
 
