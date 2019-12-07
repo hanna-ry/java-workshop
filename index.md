@@ -11,9 +11,9 @@ Welcome!
 
 The introduction slides, with instructions on how to install the java development enviorment on your computer:
 
-[link](https://docs.google.com/presentation/d/1ccMVm5nXKfPi9ciCNXAgnpB0VLV0Cb7gEislbcAJJYo/edit?usp=sharing)
+[Download slides](https://docs.google.com/presentation/d/1ccMVm5nXKfPi9ciCNXAgnpB0VLV0Cb7gEislbcAJJYo/edit?usp=sharing)
 
-[link] https://drive.google.com/file/d/1Ho6_IVvl6XwDqQriUP8s7gg44EW3SzPW/view?usp=sharing
+[Download workshop files (zip)] (https://drive.google.com/file/d/1Ho6_IVvl6XwDqQriUP8s7gg44EW3SzPW/view?usp=sharing)
 
 
 
