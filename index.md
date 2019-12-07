@@ -209,7 +209,7 @@ All is about three loops:
 There we go :)
 ## Harder project: Lets create some christmas memories
 
-![image](tempsnip.png)
+![image](game.png)
 
 Or in this case, Christmas Memory. Tha classic game we all love to play.
 TODO: Add instructions and code. And fix the terrible pictre
