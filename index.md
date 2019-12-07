@@ -1,4 +1,4 @@
-# Java Workshop WORK IN PROGRESS :)
+# Java Workshop 
 
 
 
@@ -7,15 +7,15 @@
 
 ## Introduction 
 
-https://docs.google.com/presentation/d/1ccMVm5nXKfPi9ciCNXAgnpB0VLV0Cb7gEislbcAJJYo/edit?usp=sharing
+Welcome!
 
-TODO: Find better pictures for memory game (hanna) done
+The introduction slides, with instructions on how to install the java development enviorment on your computer:
 
-TODO: Add the zipfile here so participants can download (hanna)
+[link](https://docs.google.com/presentation/d/1ccMVm5nXKfPi9ciCNXAgnpB0VLV0Cb7gEislbcAJJYo/edit?usp=sharing)
 
-TODO: Add some more details to the christmas tree program (saeideh?) done
+[link] https://drive.google.com/file/d/1Ho6_IVvl6XwDqQriUP8s7gg44EW3SzPW/view?usp=sharing
 
-TODO: Proof read this page for spelling mistakes (both)
+
 
 ## Lets do some christmas themed programming!
 ### Hello World! 
