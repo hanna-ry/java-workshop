@@ -252,7 +252,7 @@ We already created the class Card for you. Take a look: It contains an Image, an
 
 In the resources folder, there are 8 images we will use for the cards.
 
-In the beginning of the class, we've already created some variables: openCards where we will store open cards, frame where we store the game "frame", and "cards" which stores all cards. We'll now create the cards!
+In the beginning of the Board class, we've already created some variables: openCards where we will store open cards, frame where we store the game "frame", and "cards" which stores all cards. We'll now create the cards!
 
 Under the already initiated values mentioned above, we'll add the cards. Each card needs to be added twice, and have an ID and an image:
 
