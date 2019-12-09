@@ -227,16 +227,16 @@ All is about three loops:
  
  **Step two: Loop for printing the Space**
  ```
- for (int j = 0; j < i; j++)
+ for (int j = 0; j < x-i; j++)
     System.out.print(" ");
  ```
  
  **Step three: Loop for printing the asterisks**
  ```
- for (int k = 0; k < (2 * i + 1) ; j++)
+ for (int k = 0; k < (2 * i + 1) ; k++)
     System.out.print("*");
  ```
-
+you need to have last System.out.Println() to go to next new line in each iteration.
 There we go :)
 ## Harder project: Lets create some christmas memories
 
